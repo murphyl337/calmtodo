@@ -1,0 +1,28 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="todo-data">
+    <script>
+        Polymer({
+            is: 'todo-data',
+            properties: {
+                todos: {
+                    type: Array,
+                    notify: true,
+                    value: function () {
+                        return [
+                            {
+                                label: "Get ready for wedding",
+                                isComplete: true
+                            },
+                            {
+                                label: "Crush the wedding!",
+                                isComplete: false
+                            }
+                        ];
+                    }
+                }
+            }
+
+        });
+    </script>
+</dom-module>
